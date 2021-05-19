@@ -37,7 +37,7 @@ namespace Blackjack
     //Denna klass är jag mest stolt över.
     //Den gör precis det ett kort bör göra, inget mer, inget mindre. 
     //Koden är även consis och lätt förstårlig.
-    
+
     //Klass för ett kort.
     class Card
     {
@@ -46,7 +46,7 @@ namespace Blackjack
         private string[] cardUTF8;
         private string[] cardUTF8Hidden;
 
-        //Skapar ett kort utifrån de angivna parametrarna.
+        //Constructor för att skapa ett kort utifrån de angivna parametrarna.
         public Card(int suit, int rank)
         {
             this.cardSuit = (Suit)suit;
