@@ -13,10 +13,10 @@ namespace Blackjack
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("What is your name?");
-            User user = new User(5000, Console.ReadLine());
+            BlackJackUser user = new BlackJackUser(5000, Console.ReadLine());
             Menu(user);
         }
-        static void Menu(User user)
+        static void Menu(BlackJackUser user)
         {
             while (true)
             {
@@ -46,7 +46,7 @@ namespace Blackjack
         }
                 //Tar emot en användare och skriver ut namnet, sedan alla alternativ
 
-        static void PlayBlackJack(User user)
+        static void PlayBlackJack(BlackJackUser user)
         {
             Console.WriteLine("How much would you like to bet?");
             int bet = TryParseInt();
